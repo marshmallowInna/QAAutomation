@@ -49,14 +49,11 @@ public class CompoundAssigmentOperator {
         totalResult = totalResult |= 7;
         System.out.println("Total result: " + totalResult);
 
-        totalResult = totalResult++;
-        System.out.println("Total result: " + totalResult);
 
-        totalResult = totalResult--;
-        System.out.println("Total result: " + totalResult);
 
-        totalResult = - totalResult;
-        System.out.println("Total result: " + totalResult);
+
+
+
 
 
         }
