@@ -8,9 +8,9 @@ public class VariableDeclaration {
     public static void main(String[] args) {
         byte byteValue = 100;
         short shortValue = 30549;
-        int intValue = 5000;
+        int intValue = 500;
         long longValue = 456987123658966L;
-        double doubleValue = 9.9;
+        double doubleValue = 19.9;
         float fValue = 15.8F;
         char charValue = 'B';
 
