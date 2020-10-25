@@ -15,10 +15,15 @@ package Task3;
  * Your BMI is 22.5
  */
 
+import java.util.Scanner;
+
 public class BMICalculator {
     public static void main(String[] args) {
-        double height = 1.85;
-        double weight = 77;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input  your H: ");
+        double height = scanner.nextDouble();
+        System.out.println("Input you W:");
+        double weight = scanner.nextDouble();
         double BMI;
         BMI = weight / (height * height);
         System.out.println("Your height in m: " + weight );

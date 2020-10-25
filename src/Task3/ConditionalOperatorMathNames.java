@@ -1,5 +1,7 @@
 package Task3;
 
+import org.omg.CORBA.DynAnyPackage.Invalid;
+
 import java.time.Month;
 
 /**
@@ -36,7 +38,7 @@ public class ConditionalOperatorMathNames {
      } else if (numberOfMonth == 12) {
          return Month.of(12).name();
      } else {
-        return Month.of(12).name();
+        return "Invalid";
      }
  }
       public static void main (String[] args) {
