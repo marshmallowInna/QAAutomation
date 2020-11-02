@@ -18,7 +18,7 @@ public class GuessingNumber {
         Scanner scanner = new Scanner(System.in);
         int value = 10 ;
         int guess ;
-         Random r = new Random(20);
+         Random r = new Random(10);
         do {
             System.out.println("Input secret number: " + " ");
             guess = scanner.nextInt();

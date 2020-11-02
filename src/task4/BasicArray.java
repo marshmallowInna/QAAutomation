@@ -23,7 +23,7 @@ public class BasicArray {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
 
-                array[i][j] =(int)( r.nextInt(10));
+                array[i][j] =(int)( r.nextInt(15));
                 System.out.print(" " + array[i][j] + " ");
         }
             System.out.println();

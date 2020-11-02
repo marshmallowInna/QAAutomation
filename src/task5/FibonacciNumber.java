@@ -11,7 +11,7 @@ package task5;
  */
 public  class FibonacciNumber {
         int fibonacciNumber(int number) {
-            if (number <= 8)
+            if (number <= 15)
                 return number;
             return fibonacciNumber(number - 1) + fibonacciNumber(number - 2);
         }

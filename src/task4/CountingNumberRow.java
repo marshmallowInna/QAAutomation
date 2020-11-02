@@ -20,7 +20,7 @@ public class CountingNumberRow {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" Enter number: ");
         int anInt = scanner.nextInt();
-        System.out.println(" Your number: " + anInt);
+        System.out.println("Enter your number: " + anInt);
         System.out.println(" Counting number row: ");
         for (int i = 0; i <= anInt; i++) {
             System.out.println(i + " ");
