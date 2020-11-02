@@ -10,14 +10,14 @@ package task5;
  * Базовая формула: F (n) = F (n - 1) + F (n - 2).
  */
 public  class FibonacciNumber {
-        int fibonacciNumber(int number) {
-            if (number <= 15)
+       public static int fibonacciNumber(int number) {
+            if (number <= 2)
                 return number;
             return fibonacciNumber(number - 1) + fibonacciNumber(number - 2);
         }
 
         public static void main(String[] args) {
-           // System.out.println(fibonacciNumber(8));
+            System.out.println(fibonacciNumber(5));
 
         }
 }

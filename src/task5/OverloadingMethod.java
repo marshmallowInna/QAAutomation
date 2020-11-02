@@ -10,16 +10,26 @@ package task5;
  */
 public class OverloadingMethod {
         public static void main(String[] args) {
+            Overload over = new Overload();
             sumAndPrint(4, 5);
             sumAndPrint(6.7, 4.5);
-        }
+            over.overLoad();
+            System.out.println();
 
-        public static void sumAndPrint(int firstNumber, int secondNumber) {
+        }
+        static class Overload{
+            void overLoad(){
+                System.out.println(" Without numbers");
+            }
+        }
+        public static int sumAndPrint(int firstNumber, int secondNumber) {
             System.out.println("The sum of 2 integer values is " + (firstNumber + secondNumber));
+            return firstNumber + secondNumber;
         }
 
-        public static void sumAndPrint(double firstNumber, double secondNumber) {
+        public static double sumAndPrint(double firstNumber, double secondNumber) {
             System.out.println("The sum of 2 double values is " + (firstNumber + secondNumber));
+            return firstNumber + secondNumber;
         }
 
         // ...
