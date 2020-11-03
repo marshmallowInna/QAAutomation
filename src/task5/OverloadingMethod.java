@@ -13,6 +13,8 @@ public class OverloadingMethod {
             Overload over = new Overload();
             sumAndPrint(4, 5);
             sumAndPrint(6.7, 4.5);
+            sumAndPrint(8, 9, 2.5);
+            sumAndPrint(23.5f, 91.7f, 2.5f);
             over.overLoad();
             System.out.println();
 
@@ -31,7 +33,14 @@ public class OverloadingMethod {
             System.out.println("The sum of 2 double values is " + (firstNumber + secondNumber));
             return firstNumber + secondNumber;
         }
+        public static double sumAndPrint( double firstNumber, double secondNumber, double thirdNumber) {
+            System.out.println("The sum of 3 douuble name is " + (firstNumber + secondNumber + thirdNumber));
+            return firstNumber + secondNumber + thirdNumber;
+        }
+        public static float sumAndPrint( float firstNumber, float secondNumber, float thirdNumber) {
+            System.out.println("The sum of 3 float name is " + (firstNumber + secondNumber + thirdNumber));
+            return firstNumber + secondNumber + thirdNumber;
+        }
 
-        // ...
     }
 
