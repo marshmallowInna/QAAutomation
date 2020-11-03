@@ -18,7 +18,7 @@ public class OverloadingMethod {
             sumAndPrint(8, 9, 2.5);
             sumAndPrint(23.5f, 91.7f, 2.5f);
             sumAndPrint(23.5, 894.3);
-            sumAndPrint(50046895, 78965324);
+            sumAndPrint(500468954, 78965324);
 
         }
         static class Overload{
