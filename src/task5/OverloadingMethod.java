@@ -11,12 +11,14 @@ package task5;
 public class OverloadingMethod {
         public static void main(String[] args) {
             Overload over = new Overload();
+            over.overLoad();
+            System.out.println();
             sumAndPrint(4, 5);
             sumAndPrint(6.7, 4.5);
             sumAndPrint(8, 9, 2.5);
             sumAndPrint(23.5f, 91.7f, 2.5f);
-            over.overLoad();
-            System.out.println();
+            sumAndPrint(23.5, 894.3);
+            sumAndPrint(50046895, 78965324);
 
         }
         static class Overload{
@@ -41,6 +43,15 @@ public class OverloadingMethod {
             System.out.println("The sum of 3 float name is " + (firstNumber + secondNumber + thirdNumber));
             return firstNumber + secondNumber + thirdNumber;
         }
+         public static float sumAndPrint( float firstNumber, float secondNumber) {
+            System.out.println("The sum of 2 float name is " + (firstNumber + secondNumber));
+            return firstNumber + secondNumber;
+        }
+         public static long sumAndPrint( long firstNumber, long secondNumber) {
+            System.out.println("The sum of 2 long name is " + (firstNumber + secondNumber));
+            return firstNumber + secondNumber;
+        }
+
 
     }
 
