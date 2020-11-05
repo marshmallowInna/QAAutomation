@@ -1,5 +1,7 @@
 package task3;
 
+
+import java.util.Scanner;
 /*
 public class WeightOnSolarSystemPlanetsSwitch {
 
@@ -9,7 +11,6 @@ public class WeightOnSolarSystemPlanetsSwitch {
      * The weight might be calculated using the following formula: weight = mass * surface gravity.
      * The "mass", "planet" should be asked from the user using Scanner class.
      * You MUST use only "switch" operator in this task.
-
     public static void main(String[] args) {
         final double SURFACE_GRAVITY_ON_MERCURY = 0.155;
         final double SURFACE_GRAVITY_ON_VENUS = 0.8975;
@@ -43,5 +44,4 @@ public class WeightOnSolarSystemPlanetsSwitch {
 
         }
     }
-}
-*/
+}*/
