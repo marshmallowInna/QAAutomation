@@ -3,8 +3,8 @@ package inheritance;
 public class Student extends Person {
     // Uncomment, fix and expand the class
 
-    private String universityName;
-    private int credits;
+    private String universityName = "KPI";
+    private int credits = 1000;
 
     public Student() {
 
@@ -17,7 +17,7 @@ public class Student extends Person {
     }
 
     public String getUniversityName() {
-        return universityName;
+        return universityName ;
     }
 
     public void setUniversityName(String universityName) {
@@ -42,12 +42,12 @@ public class Student extends Person {
 
     @Override
     public void work() {
-        System.out.println(" working student");
+        System.out.println(" University is - " + this.getUniversityName());
     }
 
     public void study() {
         credits += 1;
-        System.out.println(" student credits ");
+        System.out.println(" student credits " + this.getCredits());
     }
     public void  nameYear(){
 
