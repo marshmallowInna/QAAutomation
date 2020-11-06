@@ -13,10 +13,11 @@ public  class Professor extends Person {
     }
 
     public Professor(String name, String address, String universityName, String degree, String course) {
-        super(name, address);
+        super(name = "Kolya", address = "Ahmatova st.5");
         this.universityName = universityName;
         this.degree = degree;
         this.course = course;
+        System.out.println(" Professor student: " + getName() + getAddress());
     }
 
     public String getUniversityName() {
@@ -60,8 +61,9 @@ public  class Professor extends Person {
     }
 
     @Override
-    public void work() {
-        System.out.println(" professor work ");
+    public void work(double a, double b) {
+        System.out.println(" Proffesor earn money");
     }
 }
+
 

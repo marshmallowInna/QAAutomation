@@ -1,7 +1,5 @@
 package inheritance;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 public abstract class Person {
     /**
      * This is a representation of an abstract person.
@@ -15,15 +13,18 @@ public abstract class Person {
     }
 
     public Person(String name, String address) {
-            this.name = name;
+            this.name = name ;
             this.address = address;
         }
 
         /**
          * Describes how a person is doing their work to earn money.
+         * @return
          */
-        public abstract void work();
-        char grade;
+        public abstract void work(double a, double b);
+        double a = 5.500;
+        double b = 12;
+        double earnYear = a*b;
 
         public String getName() {
             return name;
@@ -57,5 +58,7 @@ public abstract class Person {
                     ", address='" + address + '\'' +
                     '}';
         }
-    }
+
+
+}
 

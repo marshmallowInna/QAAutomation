@@ -48,10 +48,7 @@ public class Speciality extends Student {
                 "} " + super.toString();
     }
 
-    @Override
-    public void work() {
-        super.work();
-    }
+
 
     @Override
     public void study() {
@@ -64,10 +61,15 @@ public class Speciality extends Student {
     }
 
     @Override
-    public String activity() {
-        super.activity();
-        return " Student always active";
+    public int activity(int m) {
+        return super.activity(m);
     }
+
+    @Override
+    public void work(double a, double b) {
+        super.work(a, b);
+    }
+
     public void description(){
         System.out.println(" speciality description : ");
     }

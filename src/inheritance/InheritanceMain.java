@@ -25,23 +25,36 @@ package inheritance;
     public class InheritanceMain {
     public static void main(String[] args) {
         // test created hierarchy of classes here
-        work(new Person() {
-            @Override
-            public void work() {
-                System.out.println(" I need works betteer");
-            }
-        });
+
                 Person person = new Student(); // наш абстр класс персон , а в студенте уже есть реализация нашего абс метода
                 //person. - методы все доступны
                 Student student = new Student();
                // person. - не могу вызвать с студента Универ и кредит
-        work(student);
+
+                Professor p = new Professor();
+        System.out.println(p);
+                Speciality s = new Speciality();
+        System.out.println(s);
+
+
+       // work(student);
         student.study();
+        student.activity(4);
+        student.nameYear();
+
         System.out.println(student);
+        System.out.println(student.activity(4));
 
+       // Salary s = new Salary( );
+       // Student student1 = new Salary();
+       // s.pay();
+       // System.out.println(" Create pay using ref Student");
+        //student1.
     }
 
-    public static void work(Person person){
-        person.work();
-    }
+  /* public static void work(Person person){
+      person.work();
+        System.out.println();
+    }*/
+
 }
