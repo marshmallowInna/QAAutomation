@@ -12,12 +12,11 @@ public  class Professor extends Person {
 
     }
 
-    public Professor(String name, String address, String universityName, String degree, String course) {
-        super(name = "Kolya", address = "Ahmatova st.5");
+    public Professor(String name, String gender, String address, String universityName, String degree, String course) {
+        super(name, gender, address);
         this.universityName = universityName;
         this.degree = degree;
         this.course = course;
-        System.out.println(" Professor student: " + getName() + getAddress());
     }
 
     public String getUniversityName() {
@@ -47,7 +46,7 @@ public  class Professor extends Person {
         System.out.println(" Student group number ");
     }
     void numberCourse(){
-        System.out.println(" Student course number ");
+        System.out.println(" Student course number " + this.course +" " + this.degree);
 
     }
 
@@ -61,7 +60,7 @@ public  class Professor extends Person {
     }
 
     @Override
-    public void work(double a, double b) {
+    public void work() {
         System.out.println(" Proffesor earn money");
     }
 }

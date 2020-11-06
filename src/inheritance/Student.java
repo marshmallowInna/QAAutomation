@@ -4,16 +4,16 @@ public class Student extends Person {
     // Uncomment, fix and expand the class
 
     private String universityName;
-    private int credits;
+    private int credits ;
 
     public Student() {
 
     }
 
-    public Student(String name, String address, String universityName, int credits) {
-        super(name, address);
-        this.universityName = " KPI";
-        this.credits = 1000;
+    public Student(String name, String gender, String address, String universityName, int credits) {
+        super(name, gender, address);
+        this.universityName = universityName;
+        this.credits = credits;
     }
 
     public String getUniversityName() {
@@ -42,7 +42,7 @@ public class Student extends Person {
 
 
     @Override
-    public void work(double a, double b) {
+    public void work() {
         System.out.println("Student earn money");
     }
 
@@ -50,8 +50,7 @@ public class Student extends Person {
         credits += 1;
         System.out.println(" student credits " + this.getCredits());
     }
-    public void  nameYear(){
-
+    public final void  nameYear(){  // не будет переопределяться
         System.out.println(" student nameYear :" );
 
     }

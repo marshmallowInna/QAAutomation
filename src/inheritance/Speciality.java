@@ -2,17 +2,14 @@ package inheritance;
 
 public class Speciality extends Student {
     private String technical;
-    private String humanitar;
-    private String sociologist;
+
 
     public Speciality() {
     }
 
-    public Speciality(String name, String address, String universityName, int credits, String technical, String humanitar, String sociologist) {
-        super(name, address, universityName, credits);
+    public Speciality(String name, String gender, String address, String universityName, int credits, String technical) {
+        super(name, gender, address, universityName, credits);
         this.technical = technical;
-        this.humanitar = humanitar;
-        this.sociologist = sociologist;
     }
 
     public String getTechnical() {
@@ -23,31 +20,12 @@ public class Speciality extends Student {
         this.technical = technical;
     }
 
-    public String getHumanitar() {
-        return humanitar;
-    }
-
-    public void setHumanitar(String humanitar) {
-        this.humanitar = humanitar;
-    }
-
-    public String getSociologist() {
-        return sociologist;
-    }
-
-    public void setSociologist(String sociologist) {
-        this.sociologist = sociologist;
-    }
-
     @Override
     public String toString() {
         return "Speciality{" +
                 "technical='" + technical + '\'' +
-                ", humanitar='" + humanitar + '\'' +
-                ", sociologist='" + sociologist + '\'' +
                 "} " + super.toString();
     }
-
 
 
     @Override
@@ -55,10 +33,6 @@ public class Speciality extends Student {
         super.study();
     }
 
-    @Override
-    public void nameYear() {
-        super.nameYear();
-    }
 
     @Override
     public int activity(int m) {
@@ -66,8 +40,8 @@ public class Speciality extends Student {
     }
 
     @Override
-    public void work(double a, double b) {
-        super.work(a, b);
+    public void work() {
+        super.work();
     }
 
     public void description(){

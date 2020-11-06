@@ -24,37 +24,51 @@ package inheritance;
 
     public class InheritanceMain {
     public static void main(String[] args) {
-        // test created hierarchy of classes here
+        Person person = new Student(); // наш абстр класс персон , а в студенте уже есть реализация нашего абс метода
+        //person. - методы все доступны
 
-                Person person = new Student(); // наш абстр класс персон , а в студенте уже есть реализация нашего абс метода
-                //person. - методы все доступны
-                Student student = new Student();
-               // person. - не могу вызвать с студента Универ и кредит
+        Student student = new Student();
+        // person. - не могу вызвать с студента Универ и кредит
+        Student student1 = new Student("aaaa"," m", "dffff","KPI", 4);
+        Student student2 = new Student("bbbbb","w","dddddd","NTY",2000);
+        System.out.println(student1);
+        System.out.println(student2.toString());
+        student.work();
+        System.out.println("----------------------------");
 
-                Professor p = new Professor();
+        Professor p = new Professor();
+        p.work();
+        p.numberCourse();
         System.out.println(p);
-                Speciality s = new Speciality();
+        System.out.println("-----------------------------------------");
+        Speciality s = new Speciality("ffffff", "w", "sttreet","PPP",5000,"QA");
+        s.description();
+        s.nameCity();
+        s.rating();
+        System.out.println(s.getTechnical());
         System.out.println(s);
 
+        System.out.println("---------------------------------------------");
 
-       // work(student);
         student.study();
         student.activity(4);
         student.nameYear();
+        System.out.println("--------------------------------------------------");
+        User user = new User("xxxx", "m", " adress", " YYY", 500 , "987654321","dotcom@gmail.com " );
+        user.greeting();
+        user.work();
+        System.out.println(user.toString());
 
         System.out.println(student);
         System.out.println(student.activity(4));
 
-       // Salary s = new Salary( );
-       // Student student1 = new Salary();
-       // s.pay();
-       // System.out.println(" Create pay using ref Student");
-        //student1.
+       // extraWork(new Person){  //анонимный обьект
+
+        }
     }
 
-  /* public static void work(Person person){
-      person.work();
-        System.out.println();
-    }*/
+  /*  public static void exraWork(Person person)}
+    person.work();
+}*/
 
-}
+

@@ -12,19 +12,18 @@ public abstract class Person {
     public Person() {
     }
 
-    public Person(String name, String address) {
-            this.name = name ;
-            this.address = address;
-        }
+    public Person(String name, String gender, String address) {
+        this.name = name;
+        this.gender = gender;
+        this.address = address;
+    }
 
-        /**
+    /**
          * Describes how a person is doing their work to earn money.
          * @return
          */
-        public abstract void work(double a, double b);
-        double a = 5.500;
-        double b = 12;
-        double earnYear = a*b;
+        public abstract void work();
+
 
         public String getName() {
             return name;
